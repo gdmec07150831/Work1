@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--completionThreshold：设置输入多少字符时开始匹配-->
+    <AutoCompleteTextView
+        android:completionThreshold="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="单个搜索匹配"
+        android:id="@+id/autoCompleteTextView" />
+
+    <MultiAutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="多个搜索，以逗号为分隔符"
+        android:id="@+id/multiAutoCompleteTextView" />
+</LinearLayout>
